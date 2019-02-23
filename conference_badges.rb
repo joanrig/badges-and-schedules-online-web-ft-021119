@@ -3,8 +3,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(speakers)
-  badges = speakers.map { |speaker| badge_maker(speaker) }
-  badges
+  speakers.map { |speaker| badge_maker(speaker) }
 end
 
 #"Hello, \_\_\_\_\_! You'll be assigned to room \_\_\_\_\_!"
@@ -17,6 +16,6 @@ def assign_rooms(speakers)
 end
 
 def printer(speakers)
-  badges
-  assignments
+  batch_badge_creator(speakers)
+  assign_rooms(speakers)
 end
