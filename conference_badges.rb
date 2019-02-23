@@ -13,10 +13,10 @@ def assign_rooms(speakers)
   speakers.each_with_index do |speaker, index|
     assignments<< "Hello, #{speaker}! You'll be assigned to room #{index+1}!"
   end
-  assignments.flatten
+  assignments
 end
 
 def printer(speakers)
-  puts batch_badge_creator(speakers)
+  puts (batch_badge_creator(speakers)).to_s
   puts assign_rooms(speakers)
 end
