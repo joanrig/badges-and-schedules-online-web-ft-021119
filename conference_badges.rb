@@ -16,7 +16,7 @@ def assign_rooms(speakers)
   assignments
 end
 
-def printer
+def printer(speakers)
   badges
   assignments
 end
