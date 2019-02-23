@@ -4,6 +4,7 @@ end
 
 def batch_badge_creator(speakers)
   speakers.map { |speaker| badge_maker(speaker) }
+
 end
 
 #"Hello, \_\_\_\_\_! You'll be assigned to room \_\_\_\_\_!"
@@ -16,6 +17,6 @@ def assign_rooms(speakers)
 end
 
 def printer(speakers)
-  batch_badge_creator(speakers)
-  assign_rooms(speakers)
+  puts batch_badge_creator(speakers)
+  puts assign_rooms(speakers)
 end
